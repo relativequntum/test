@@ -1,0 +1,121 @@
+@CHARSET "UTF-8";
+body {
+	background-image: url("images/moviebg.png");
+	background-color: #cccccc;
+	width:100%;
+}
+.row:before, .row:after {
+  display: table;
+  content: " ";
+}
+.row:after {
+	clear: both;
+}
+.container {
+	padding-top: 50px;
+	margin: 0 auto;
+	width: 800px;
+	min-width: 800px;
+}
+.main {
+	width: 100%;
+	border: darkgray 2px solid;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.floating-left{
+	float: left;
+}
+
+header {
+	background-image: url("images/rancidbannerbg.png");
+	height: 50px;
+	width: 100%;
+	margin-top: -10px;
+	margin-left: -10px;
+	position: fixed;
+	z-index: 999;
+}
+header img {
+	margin: 0px auto;
+	display:block;
+}
+.main-header h1 {
+	text-align: center;
+	font-family: "Georgia";
+	font-size: 24pt;
+	text-shadow: 5px 5px #999999;
+}
+
+.ratings-container {
+	min-width: 550px;
+	background-image: url("images/rottenlargebg.png");
+	height: 83px;
+}
+footer{
+	clear: both;
+	background-color: #A2B964;
+}
+footer p {
+	text-align: center;
+}
+
+/* reviews section */
+
+.review {
+	background-color: white;
+	border-radius: 20px;
+	min-height: 2em;
+	padding: 3.5%;
+}
+.reviews-container {
+	width: 65%;
+	float: left;
+	min-width: 550px;
+	/*background-color: lightgray;*/
+	font-size: 10pt;
+	padding-bottom: 22px;
+}
+.main.row {
+    background-color: lightgray;
+}
+.review-wrapper {
+	width: 48%;
+	float: left;
+	padding: 1%;
+}
+
+.rating {
+	font-size: 5.5em;
+	font-family: sans-serif;
+	height: inherit;
+	position: relative;
+	vertical-align: top;
+	padding: 0px 0.5em;
+}
+.review > img {
+	float: left;
+	padding: 2px;
+}
+.fresh{
+	color: green;
+}
+.rotten{
+	color: red;
+}
+
+/* overview style */
+
+.overview {
+	width: 250px;
+	font-size: 9pt;
+	float: left;
+	background-color: #A2B964;
+}
+.overview > dl:not(p) {
+	margin-left: 10px;
+}
+.overview ul {
+	list-style: none;
+	margin-left: -39px;
+}
